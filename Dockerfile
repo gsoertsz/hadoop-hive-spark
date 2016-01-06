@@ -23,4 +23,3 @@ ENV SPARK_HOME /opt/spark-1.5.1
 ENV PATH $PATH:$SPARK_HOME/sbin
 
 RUN start-all.sh
-
