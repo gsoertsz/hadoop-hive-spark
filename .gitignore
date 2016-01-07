@@ -1,0 +1,7 @@
+
+metastore_db*
+.git
+*.log
+log*
+*log
+*.tgz
