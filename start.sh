@@ -9,6 +9,8 @@ export SPARK_IP_ADDRESS=$(ip -4 -o address show dev eth0 | egrep -o "(([0-9.]{1,
 
 start-all.sh
 
+service mysql start
+
 if [[ $1 == "-bash" ]]; then
   /bin/bash
 fi

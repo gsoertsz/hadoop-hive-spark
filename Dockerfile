@@ -12,8 +12,9 @@ RUN ln -s /opt/spark-1.5.1-bin-with-hive /opt/spark-1.5.1
 COPY spark-env.sh /opt/spark-1.5.1/conf
 
 ENV SPARK_HOME /opt/spark-1.5.1
-
-ENV PATH ${PATH}:$SPARK_HOME/sbin
+ENV HADOOP_HOME /usr/local/hadoop
+ENV HIVE_HOME /usr/local/hive
+ENV PATH ${PATH}:$SPARK_HOME/sbin:$HIVE_HOME/bin
 
 EXPOSE 8080 7077
 
